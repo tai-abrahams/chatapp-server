@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 mongoose
-    .connect('mongodb://localhost:27017/Users', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
+    .connect(process.env.MONGODB_URL, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
     .catch(e=>{
         console.error('Connection Error:', e.message)
     })
