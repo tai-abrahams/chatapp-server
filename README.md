@@ -1,0 +1,2 @@
+# chatapp-server
+INCOMPLETE MONGODB MESSAGE SCHEMA
