@@ -20,7 +20,7 @@ app.use(session({
 //     next()
 // })
 
-//app.use(bodyParser.urlencoded({ extended: true }))
+
 app.use(cors({
     origin: 'http://localhost:3000'
 }))
@@ -28,7 +28,7 @@ app.use(cors({
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-//app.use(bodyParser.json())
+
 app.use(credRouter)
 app.use(friendsRouter)
 
@@ -49,4 +49,4 @@ server.listen(process.env.PORT || 8080, function(err){
     if(err){throw err}
     console.log('listening onn', process.env.PORT)
 })
-// create a algorithm that will use maybe google maps or just show list of users that are closest to you from a databse of user locations
+
